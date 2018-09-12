@@ -153,7 +153,7 @@ end
 def shoe_size(player_name)
   players_data = []
   players_data  = game_hash.each do |side, side_data|
-    side.collect do |team_data|
+    side_data.each do |team_data|
       if team_data == :players
         data.values
       end
