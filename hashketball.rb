@@ -147,8 +147,11 @@ def num_points_scored(player_name)
   get_data_from_player(player_name, :points)
 end
 
-def shoe_size(player_name)
+=begin def shoe_size(player_name)
   get_data_from_player(player_name, :shoe)
+=end
+def shoe_size(player_name)
+  game_hash.each do |
 end
 
 def get_team(team_name)
