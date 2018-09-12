@@ -151,7 +151,15 @@ end
   get_data_from_player(player_name, :shoe)
 =end
 def shoe_size(player_name)
-  game_hash.each do |
+  players_data = []
+  players_data  = game_hash.collect do |side|
+    side.collect do |team_data, data|
+      if team_data == :players
+        data.values
+      end
+    end
+  end
+      
 end
 
 def get_team(team_name)
