@@ -156,7 +156,9 @@ def shoe_size(player_name)
     side_data[:players].each do |player_data|
       if player_data[:player_name] == player_name
         returned_shoesize=player_data[:shoe]
-        
+      end
+    end
+  end
       
 end
 
