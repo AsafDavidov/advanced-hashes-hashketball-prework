@@ -151,7 +151,6 @@ end
   get_data_from_player(player_name, :shoe)
 =end
 def shoe_size(player_name)
-  
   game_hash.each do |side, side_data|
     side_data[:players].each do |player_data|
       if player_data[:player_name] == player_name
@@ -159,7 +158,7 @@ def shoe_size(player_name)
       end
     end
   end
-      
+  returned_shoesize  
 end
 
 def get_team(team_name)
